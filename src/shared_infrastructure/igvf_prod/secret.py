@@ -12,7 +12,7 @@ class DockerHubCredentials(Construct):
         self.secret = Secret.from_secret_complete_arn(
             self,
             'DockerSecret',
-            'arn:aws:secretsmanager:us-west-2:035226225042:secret:docker-hub-credentials-lboDif',
+            'arn:aws:secretsmanager:us-west-2:919468641101:secret:docker-hub-credentials-pa0kuq',
         )
 
 
@@ -23,7 +23,7 @@ class PortalCredentials(Construct):
         self.indexing_service_key = Secret.from_secret_complete_arn(
             self,
             'IndexingServiceKey',
-            'arn:aws:secretsmanager:us-west-2:035226225042:secret:indexing-service-portal-key-OzEDnM',
+            'arn:aws:secretsmanager:us-west-2:919468641101:secret:indexing-service-portal-key-NHVCTk',
         )
 
 
@@ -34,16 +34,5 @@ class UploadFilesUserAccessKeys(Construct):
         self.secret = Secret.from_secret_complete_arn(
             self,
             'AccessKeyAndSecretAccessKey',
-            'arn:aws:secretsmanager:us-west-2:035226225042:secret:upload-igvf-files-user-access-key-secret-DBCayo',
-        )
-
-
-class UploadRestrictedFilesUserAccessKeys(Construct):
-
-    def __init__(self, scope: Construct, construct_id: str, **kwargs: Any) -> None:
-        super().__init__(scope, construct_id, **kwargs)
-        self.secret = Secret.from_secret_complete_arn(
-            self,
-            'AccessKeyAndSecretAccessKey',
-            'arn:aws:secretsmanager:us-west-2:035226225042:secret:upload-igvf-restricted-files-user-access-key-secret-8Vcigz',
+            'arn:aws:secretsmanager:us-west-2:919468641101:secret:upload-igvf-files-user-access-key-secret-7zuoCx',
         )
