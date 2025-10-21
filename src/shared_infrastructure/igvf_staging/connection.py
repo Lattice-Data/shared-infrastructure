@@ -8,7 +8,7 @@ class CodeStarConnection(Construct):
     def __init__(self, scope: Construct, construct_id: str, **kwargs: Any) -> None:
         super().__init__(scope, construct_id, **kwargs)
         self.arn = (
-            'arn:aws:codestar-connections:'
-            'us-west-2:920073238245:'
-            'connection/6f296669-7323-435c-9aac-2efe4798b68e'
+            'arn:aws:codeconnections:'
+            'us-west-2:555476105356:'
+            'connection/771e2b8f-4e2f-490a-b078-94426bf3fbee'
         )

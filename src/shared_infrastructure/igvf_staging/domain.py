@@ -10,11 +10,11 @@ class Domain(Construct):
 
     def __init__(self, scope: Construct, construct_id: str, **kwargs: Any) -> None:
         super().__init__(scope, construct_id, **kwargs)
-        self.name = 'staging.igvf.org'
+        self.name = 'staging.lattice-data.org'
         self.certificate = Certificate.from_certificate_arn(
             self,
             'DomainCertificate',
-            'arn:aws:acm:us-west-2:920073238245:certificate/bee17e48-fc7e-4623-b675-b588c1df32ab',
+            'arn:aws:acm:us-west-2:555476105356:certificate/ebea615d-b39e-4b7d-827a-168f8a545bed',
         )
         self.zone = HostedZone.from_lookup(
             self,
