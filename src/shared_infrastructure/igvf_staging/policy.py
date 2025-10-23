@@ -12,7 +12,7 @@ class BucketAccessPolicies(Construct):
         self.download_igvf_files_policy = ManagedPolicy.from_managed_policy_arn(
             self,
             'DownloadIgvfFilesPolicy',
-            'arn:aws:iam:::555476105356policy/download-igvf-files',
+            'arn:aws:iam::555476105356:policy/download-igvf-files',
         )
         self.upload_igvf_files_policy = ManagedPolicy.from_managed_policy_arn(
             self,
